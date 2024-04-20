@@ -87,8 +87,38 @@
 # model = sklearn.cluster.AgglomerativeClustering(n_clusters = 3, linkage ='ward') —This constructs a model object that uses the HAC algorithm. In this instance, the number of clusters specified is 3. The linkage argument specifies the distance metric to use between sets of examples.
 # You can use this class object to call the same fit() and fit_predict() methods as before, as well as any of the applicable metrics methods. There is no predict() method, however.
 
+# Build Decision tree models - DecisionTreeClassifier() and DecisionTreeRegressor() classes
+# model = sklearn.tree.DecisionTreeClassifier(criterion = 'gini', max_depth = 5) —This constructs a decision tree for classification. In this case, the splitting criterion is the Gini index.
+# model = sklearn.tree.DecisionTreeRegressor(max_depth = 5) —This constructs a decision tree for regression.
+# You can use these class objects to call the same fit(), score(), predict(), and predict_proba() (classification only) methods as before, as well as any of the applicable metrics methods.
+# sklearn.tree.plot_tree(model, feature_names = X_train.columns.values.tolist(), class_names = ['0', '1'], filled = True) — Create a graphical representation of a decision tree's structure.
 
+# Build Random forest models - RandomForestClassifier() and RandomForestRegressor() classes 
+# model = sklearn.tree.RandomForestClassifier(n_estimators = 100, criterion = 'gini', max_depth = 5) —This constructs a random forest for classification. In this case, the splitting criterion is the Gini index, and there will be 100 trees in the forest.
+# model = sklearn.tree.RandomForestRegressor(n_estimators = 100, max_depth = 5) —This constructs a random forest for regression.
+# You can use these class objects to call the same fit(), score(), predict(), and predict_proba() (classification only) methods as before, as well as any of the applicable metrics methods. 
+# model.oob_score_ —An attribute that returns the out-of-bag score. Subtract this score from 1 to get the error.
+# model.oob_decision_function_ —An attribute that returns the probability estimations for each out-of-bag sample (classification only).
+# model.feature_importances_ —An attribute that returns the importances of each feature, with all feature importances adding up to 1.
 
+# Build SVM models for classification - SVC() class 
+# model = sklearn.svm.SVC(kernel = 'rbf', epsilon = 10) —This constructs an SVM model for regression. In this case, the model is using the Gaussian radial basis function (RBF) kernel with 10 as the space between the margins.
+# You can use these class objects to call the same fit(), score(), and predict() methods as before, as well as any of the applicable metrics methods.
+# You can return the same support_ and support_vectors_ attributes, as with classification.
+
+# Build SVM models for regression - SVR() class 
+# model = sklearn.svm.SVR(kernel = 'sigmoid', C = 10) —This constructs an SVM model for classification. In this case, the model is using the sigmoid kernel with 10 as the regularization penalty.
+# You can use these class objects to call the same fit(), score(), and predict() methods as before, as well as any of the applicable metrics methods.
+# model.support_ —An attribute that returns the indices of the support vectors.
+# model.support_vectors_ —An attribute that returns the support vectors themselves.
+
+# Build MLP models - MLPClassifier() and MLPRegressor() classes
+# model = sklearn.neural_network.MLPClassifier(hidden_layer_sizes = (5, 5, 5), activation = 'relu') —This constructs an MLP to use for classification. In this case, three hidden layers will be constructed, each with five neurons. The ReLU activation function is being applied to the hidden layer neurons.
+# model = sklearn.neural_network.MLPRegressor(hidden_layer_sizes = (2, 2), activation = 'relu') —This constructs an MLP to use for regression. In this case, two hidden layers will be constructed, each with two neurons.
+# You can use these class objects to call the same fit(), score(), predict(), and predict_proba() (classification only) methods as before, as well as any of the applicable metrics methods.
+# model.coefs_ —An attribute that returns the weights between the neurons of each layer.
+# model.intercepts_ —An attribute that returns the bias terms for each layer.
+# model.loss_curve_ —An attribute that returns the change in loss values for each iteration of a gradient descent solver.
 
 
 
