@@ -83,6 +83,9 @@
 # sklearn.metrics.silhouette_score(X_train, clusters) —Return the mean silhouette score for all examples. Note that clusters is an object created by calling fit_predict() on the model.
 # sklearn.metrics.silhouette_samples(X_train, clusters) —Return the silhouette score for all individual examples.
 
+# Build hierarchical clustering models - AgglomerativeClustering() class 
+# model = sklearn.cluster.AgglomerativeClustering(n_clusters = 3, linkage ='ward') —This constructs a model object that uses the HAC algorithm. In this instance, the number of clusters specified is 3. The linkage argument specifies the distance metric to use between sets of examples.
+# You can use this class object to call the same fit() and fit_predict() methods as before, as well as any of the applicable metrics methods. There is no predict() method, however.
 
 
 
