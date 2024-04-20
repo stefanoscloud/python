@@ -13,3 +13,11 @@
 # network.evaluate(X_test, y_test) —Evaluate the network's performance on test data. This returns both the loss value and the value of the chosen metric.
 # network.predict(X_test) —Use the network to make predictions on test data.
 
+# Build RNN models - Sequential() class 
+# network = keras.models.Sequential() —This constructs the sequential network object.
+# network.add(keras.layers.Embedding(input_dim = 5000, output_dim = 200, input_length = 1000)) —This constructs an embedding layer. In this case, the vocabulary size is 5,000 words, the word vector is 200 dimensions, and the length of the input text is 1,000 words.
+# network.add(keras.layers.LSTM(units = 128)) —This creates an LSTM cell of the specified dimensions.
+# You can use the same Flatten() and Dense() layers where necessary.
+# You can use the same object methods as with a Keras CNN to compile the model, fit the training data, evaluate the model, predict test data, etc
+
+
