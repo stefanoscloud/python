@@ -12,3 +12,8 @@
 # Lags= model_fit.k_ar – Use this attribute to retrieve the number of lags in the fit model. 
 # Model.predict(model_fit.params, start= lags, end= lags+5, lags=lags) – Use the model parameters to make predictions for the next time intervals that fall between start and end. In this example, start is equal to the number of lags and end is the next five lags ahead of that (six predictions). The lags argument also takes the number of lags. 
 # Model_fit.forecast(y= train_endo[-lags:], steps= 6) – An alternative method for forecasting the next number of specified steps. The y argument slices the last number of rows from the training set, where that number is equal to the number of lags. 
+
+# Test stationarity - tsa.stattools module
+#Statsmodels.tsa.stattools.adfuller(train_var) – This returns a tuple of various results of the ADF test on the provided variable. The second value in the tuple is the p value. 
+#Statsmodels.tsa.stattools(train_var) – This returns a tuple of various results of the KPSS test on the provided variable. The second value in the tuple is the p value. 
+
