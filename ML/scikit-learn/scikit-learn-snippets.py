@@ -23,3 +23,25 @@
 
 # Cv= sklearn.model_selection.cross_validate(estimator, X, y, cv=5) - This performs splitting, fitting and evaluation in one step, by running cross validation
 
+
+# Linear regression models - LinearRegression() class 
+# Model= sklearn.linear_model.LinearRegression() – This constructs a model object with the linear regression algorithm
+# Model.fit(X_train, y_train) – Fit a set of training data to the model. The first argument is a data frame or array with the training set (not including labels), whereas the second argument is a data frame or array of just the labels)
+# Model.score(x_test, y_test) – Return the coefficient of determination (R^2) score for the model given validation/test data. The first argument is a data frame or array with the validation/test set (not including labels), and the second argument is a data frame or array of just the labels. 
+# Model.predict(X_test) – The model makes predictions on the validation/test set, without being given labels.
+# Sklearn.metrics.mean_squared_error(y_test, prediction) – Return the MSE of the model, given validation/test data. The second argument is an object created by model.predict(), as discussed above.
+# model.coef_ – An attribute that lists the optimal model parameters generated during training. 
+
+# Regularized linear regression models - Ridge(), Lasso(), and ElasticNet() classes
+# Model= sklearn.linear_model.Ridge(alpha= 0.1) – This constructs a model object that uses ridge regression (l2 norm). The alpha parameter defines the strength of regularization to apply, which in this case is 0.1
+#Model= sklearn.linear_model.lasso(alpha= 0.1) - This constructs a model object that uses lasso regression (l1 norm). Same alpha parameter.
+#Model= sklearn.linear_model.ElasticNet(alpha= 0.1, l1_ration= 0.5) – This constructs a model object that uses elastic net regression (a weighted average of both l1 and l2 norms). In addition to using alpha, the object uses the l1_ratio parameter to add more weight to either type of regularization. A value of 0 is the same as ridge and 1 is the same as lasso. 
+# You can use these class objects to call the same fit(), score() and predict() methods as with LinearRegression() class. You can also generate the MSE using mean_squared_error() and return the model parameters using the coef_ attribute. 
+
+# Iterative linear regression models - sklearn-linear_model-Ridge() and sklearn.linear_model.SGDRegressor() classes
+# Model= sklearn-linear_model-Ridge(alpha= 0.1, solver= ‘sag’) – This constructs a ridge regression object as before, but the solver parameter specified that the algorithm should use SAG, an iterative approach, to minimize cost.
+# Model= sklearn.linear_model.SGDRegressor(penalty= ‘l2’, alpha= 0.1, learning_rate= ‘constant’, eta0 = 0.05) 
+# Use these classes to call the same methods and attributes as in LinearRegression() class 
+
+
+
