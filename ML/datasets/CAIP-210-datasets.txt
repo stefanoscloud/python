@@ -1,0 +1,96 @@
+# This file includes free/public domain ML datasets, which are used in the CAIP-210 course. Each dataset entry below includes the academic journal article or publication in which each dataset appeared, as well the URI or Python library from which to obtain each dataset.
+# The datasets are listed in order of appearance.
+
+House Sales in King County, USA
+Public domain. Retrieved from https://www.kaggle.com/harlfoxem/housesalesprediction
+
+Large Movie Review Dataset
+Maas, A. L., Daly, R. E., Pham, P. T., Huang, D., Ng, A. Y., & Potts, C. (2011, June).
+Learning Word Vectors for Sentiment Analysis. Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies, 142–150.
+Notes:
+• A small subset of the raw data can be obtained from https://ai.stanford.edu/~amaas/data/sentiment/
+• A full, preprocessed version of the dataset can be obtained by loading it through the Keras library.
+
+Clothing Dataset
+Public domain. Retrieved from https://github.com/alexeygrigorev/clothing-dataset-small
+Note:
+• The full pool of data is available at https://github.com/alexeygrigorev/clothing-dataset
+
+Combined Cycle Power Plant Dataset
+Tüfekci, P. (2014, September). Prediction of full load electrical power output of a base load operated combined cycle power plant using machine learning methods. International Journal of Electrical Power & Energy Systems, 60, 126–140. doi: 10.1016/j.ijepes.2014.02.027. 
+Kaya, H., Tüfekci, P., & Gürgen, S. F. (2012, March). Local and Global Learning Methods for Predicting Power of a Combined Gas & Steam Turbine. Proceedings of the International Conference on Emerging Trends in Computer and Electronics Engineering (ICETCEE), 13–18. 
+Note: 
+• The dataset can be obtained from https://archive.ics.uci.edu/ml/datasets/Combined+Cycle+Power+Plant
+
+California Housing
+Pace, R. K., & Barry, R. (1997, May). Sparse spatial autoregressions. Statistics & Probability Letters, 33, 291–297. doi: 10.1016/S0167-7152(96)00140-X.
+Note:
+• This dataset can be obtained from https://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html
+
+Electricity Net Generation from Solar, All Sectors in Million Kilowatt-hours(SOETPUS)
+Public domain. Retrieved from https://api.eia.gov/v2/total-energy/data
+Notes:
+• Access to the data from the link requires registration for a free API key. Please register for one at https://www.eia.gov/opendata/register.php
+
+Wage Growth and Inflation (Table D.6)
+Mehra, Y. P. (1994). Wage Growth and the Inflation Process: An Empirical Approach. In B.B. Rao (Ed.), Cointegration for the Applied Economist, 147–159. Palgrave Macmillan, London. doi:10.1007/978-1-349-23529-2_5.
+Note:
+• This dataset can be obtained from https://github.com/selva86/datasets/blob/master/Raotbl6.csv
+
+Titanic: Machine Learning from Disaster
+Public domain. Can be retrieved from https://www.kaggle.com/c/titanic
+
+Wine Dataset
+Forina, M., Leardi, R., Armanino, C., & Lanteri, S. (1990, March). PARVUS: An extendable package of programs for data exploration, classification, and correlation. Journal of Chemometrics, 4(2), 191–193. doi: 10.1002/cem.1180040210.
+Note:
+• This dataset can be loaded from the scikit-learn library.
+
+Iris Plants Dataset
+Fisher, R. A. (1936, September). The use of multiple measurements in taxonomic problems. Annals of Eugenics, 7(2), 179–188. doi: 10.1111/j.1469-1809.1936.tb02137.x.
+Note:
+• This dataset can be loaded from the scikit-learn library.
+
+Occupancy Detection
+Candanedo, L. M., & Feldheim, V. (2016, January). Accurate occupancy detection of an office room from light, temperature, humidity, and CO2 measurements using statistical learning models. Energy and Buildings, 112, 28–39. doi: 10.1016/j.enbuild.2015.11.071.
+Note:
+• This dataset can be obtained from https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection
+
+Fashion-MNIST
+Xiao, H., Rasul, K., & Vollgraf, R. (2017, August). Fashion-MNIST: A Novel Image Dataset for Benchmarking Machine Learning Algorithms. doi: 10.48550/arXiv.1708.07747.
+Note:
+• This dataset can be loaded from the Keras library.
+
+Diabetes Dataset
+Efron, B., Hastie, T., Johnstone, I., & Tibshirani, R. (2004, June). Least Angle Regression. Annals of Statistics, 32(2), 407–451. doi: 10.48550/arXiv.math/0406456.
+Note:
+• This dataset can be loaded from the scikit-learn library.
+
+Airline Passengers Dataset
+Box, E. P., & Jenkins, G. M. (1970). Time Series Analysis: Forecasting and Control (1st ed.). Holden-Day.
+Note:
+• This dataset can be obtained from https://github.com/jbrownlee/Datasets/blob/master/airline-passengers.csv
+
+Wisconsin Breast Cancer Dataset
+Street, W. N., Wolberg, W. H., & Mangasarian, O. L. (1993, July). Nuclear feature extraction for breast tumor diagnosis. Proceedings of the IS&T/SPIE International Symposium on Electronic Imaging: Science and Technology, 1905, 861–870. doi: 10.1117/12.148698.
+Note:
+• This dataset can be loaded from the scikit-learn library.
+
+Wholesale Customers Dataset
+Abreu, N. (2011). Analise do perfil do cliente Recheio e desenvolvimento de um sistema promocional (Master's dissertation). Retrieved from http://hdl.handle.net/10071/4097.
+Note:
+• This data can be obtained from https://archive.ics.uci.edu/ml/datasets/Wholesale+customers
+
+Auto MPG Dataset
+Quinlan, J. R. (1993, June). Combining Instance-Based and Model-Based Learning. Machine Learning: Proceedings of the Tenth International Conference, 236–243. doi: 10.1016/B978-1-55860-307-3.50037-X.
+Notes:
+• This data can be obtained from https://archive.ics.uci.edu/ml/datasets/Auto+MPG
+
+Penguins Dataset
+Gorman, K. B., Williams, T. D., & Fraser, W. R. (2014, March). Ecological Sexual Dimorphism and Environmental Variability Within a Community of Antarctic Penguins (Genus Pygoscelis). PLoS ONE, 9(3). doi: 10.1371/journal.pone.0090081.
+Note:
+• This dataset can be obtained from https://github.com/mwaskom/seaborn-data/blob/master/penguins.csv
+
+MNIST
+LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998, November). Gradient-based learning applied to document recognition. Proceedings of the IEEE, 86(11), 2278–2324. doi: 10.1109/5.726791.
+Note:
+• This dataset can be loaded from the Keras library
